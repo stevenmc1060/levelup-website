@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=7">
   </head>
   <body>
     <header class="site-header">
@@ -46,7 +46,7 @@
             families battling cancer can stay close to the care they need.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#donate">Give Housing Nights</a>
+            <button class="button button-primary" type="button" data-open-housing>Give Housing Nights</button>
             <a class="button button-secondary" href="#events">Join an Event</a>
           </div>
         </div>
@@ -186,6 +186,73 @@
       </section>
     </main>
 
+    <dialog class="contact-modal housing-modal" id="housing-modal" aria-labelledby="housing-modal-title">
+      <div class="contact-modal-head">
+        <div>
+          <p class="eyebrow">Offer a place to stay</p>
+          <h2 id="housing-modal-title">Give housing nights.</h2>
+        </div>
+        <button class="modal-close" type="button" data-close-housing aria-label="Close housing form">&times;</button>
+      </div>
+      <form class="contact-form" id="housing-contact-form">
+        <p class="housing-intro">Thank you for offering a property to a family traveling for cancer care. Properties must be in the Houston area and within approximately 15 minutes of the Texas Medical Center.</p>
+        <div class="contact-form-row">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+        </div>
+        <div class="contact-form-row">
+          <label>
+            Phone
+            <input type="tel" name="phone" autocomplete="tel" required>
+          </label>
+          <label>
+            Property type
+            <select name="propertyType" required>
+              <option value="" selected disabled>Select a property type</option>
+              <option>House</option>
+              <option>Apartment or condo</option>
+              <option>Guest house</option>
+              <option>Hotel or extended stay</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          Property address
+          <input type="text" name="address" autocomplete="street-address" required>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="distanceConfirmed" required>
+          <span>I confirm this property is in the Houston area and approximately 15 minutes or less from the Texas Medical Center.</span>
+        </label>
+        <div class="contact-form-row">
+          <label>
+            Number of nights offered
+            <input type="number" name="nights" min="1" step="1" required>
+          </label>
+          <label>
+            Available dates
+            <input type="text" name="availability" placeholder="For example: Nov. 1–15, 2026" required>
+          </label>
+        </div>
+        <label>
+          Property details or questions <span>(optional)</span>
+          <textarea name="message" rows="4" placeholder="Bedrooms, accessibility, restrictions, or anything else we should know"></textarea>
+        </label>
+        <p class="contact-form-note">Submitting will open your email app with this information addressed to Level-Up for a Cure.</p>
+        <div class="contact-form-actions">
+          <button class="button tournament-button" type="submit">Prepare Email</button>
+          <button class="modal-cancel" type="button" data-close-housing>Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
     <footer class="site-footer">
       <div class="section-shell footer-grid">
         <div class="footer-brand">
@@ -195,5 +262,6 @@
         <p>Founded in memory of Ryan McPherson.</p>
       </div>
     </footer>
+    <script src="home.js"></script>
   </body>
 </html>
