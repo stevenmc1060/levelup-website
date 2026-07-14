@@ -973,6 +973,290 @@ h3 {
   line-height: 1.45;
 }
 
+/* Ryan's story */
+.story-page {
+  --story-navy: #092f4f;
+  --story-cream: #f8f2e8;
+  --story-gold: #c79231;
+  --story-olive: #6d7449;
+  background: var(--story-cream);
+}
+
+.story-header {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(3, 24, 40, 0.9), transparent);
+}
+
+.story-page-shell {
+  width: min(1060px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.story-hero {
+  position: relative;
+  min-height: 720px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 76% 38%, rgba(199, 146, 49, 0.18), transparent 25%),
+    linear-gradient(135deg, #041d32, var(--story-navy));
+}
+
+.story-hero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  background: var(--story-gold);
+  content: "";
+}
+
+.story-hero-decoration {
+  position: absolute;
+  top: 50%;
+  right: clamp(-60px, 4vw, 80px);
+  color: rgba(255, 255, 255, 0.035);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: min(56vw, 700px);
+  line-height: 0.7;
+  transform: translateY(-42%);
+  user-select: none;
+}
+
+.story-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: clamp(76px, 10vw, 125px);
+}
+
+.story-hero h1 {
+  font-size: clamp(4rem, 10vw, 8.5rem);
+}
+
+.story-hero-content > p:last-child {
+  max-width: 760px;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.2rem, 2.6vw, 1.75rem);
+  line-height: 1.6;
+}
+
+.story-opening {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(36px, 8vw, 96px);
+  padding-top: clamp(80px, 11vw, 140px);
+  padding-bottom: clamp(80px, 11vw, 140px);
+}
+
+.story-opening p,
+.chapter-copy p,
+.mission-story-heading > p:last-child,
+.mission-pillars p,
+.story-closing-grid p {
+  color: #515c59;
+  font-size: 1.06rem;
+}
+
+.story-opening p {
+  margin: 0;
+}
+
+.story-dropcap {
+  color: var(--story-navy) !important;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem) !important;
+  line-height: 1.65;
+}
+
+.story-dropcap::first-letter {
+  float: left;
+  margin: 8px 10px 0 0;
+  color: var(--story-gold);
+  font-size: 4.6rem;
+  line-height: 0.75;
+}
+
+.story-video-section {
+  padding: clamp(74px, 10vw, 125px) 0;
+  color: rgba(255, 255, 255, 0.76);
+  background: var(--story-navy);
+}
+
+.story-video-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(40px, 8vw, 90px);
+  align-items: center;
+}
+
+.story-video-section h2 {
+  color: #fff;
+}
+
+.story-video-section p:not(.eyebrow) {
+  margin: 22px 0;
+}
+
+.story-video-section a {
+  color: #f4dfb7;
+  font-weight: 800;
+  text-decoration-color: var(--story-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.story-video {
+  overflow: hidden;
+  border: 1px solid rgba(199, 146, 49, 0.65);
+  background: #031727;
+  box-shadow: 18px 18px 0 rgba(199, 146, 49, 0.12);
+  aspect-ratio: 16 / 9;
+}
+
+.story-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.story-chapter {
+  padding: clamp(74px, 10vw, 125px) 0;
+  border-top: 1px solid rgba(9, 47, 79, 0.15);
+}
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 720px);
+  gap: clamp(38px, 8vw, 94px);
+}
+
+.chapter-marker span {
+  display: block;
+  color: var(--story-olive);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 3rem;
+}
+
+.chapter-marker i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 18px;
+  background: var(--story-gold);
+}
+
+.chapter-copy h2,
+.mission-story h2,
+.story-closing h2 {
+  color: var(--story-navy);
+}
+
+.chapter-copy p {
+  margin: 24px 0 0;
+}
+
+.story-quote {
+  padding: clamp(76px, 11vw, 140px) 0;
+  color: #fff;
+  background: var(--story-navy);
+}
+
+.story-quote blockquote {
+  max-width: 920px;
+  margin: 0;
+  color: #f6ead2;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.mission-story {
+  padding: clamp(80px, 11vw, 140px) 0;
+  background: #efe7da;
+}
+
+.mission-story-heading {
+  max-width: 840px;
+  margin-bottom: 56px;
+}
+
+.mission-story-heading > p:last-child {
+  margin-top: 26px;
+}
+
+.mission-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.mission-pillars section {
+  padding: 30px;
+  border-top: 3px solid var(--story-gold);
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(9, 47, 79, 0.08);
+}
+
+.mission-pillars span {
+  color: var(--story-olive);
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+
+.mission-pillars h3 {
+  margin-top: 26px;
+  color: var(--story-navy);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.mission-pillars p {
+  margin: 18px 0 0;
+  font-size: 0.98rem;
+}
+
+.story-closing {
+  padding: clamp(86px, 12vw, 150px) 0;
+}
+
+.story-closing-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(48px, 9vw, 110px);
+  align-items: start;
+}
+
+.story-closing h2 {
+  font-size: clamp(2.2rem, 4.6vw, 4rem);
+}
+
+.story-closing-grid p:first-child {
+  margin-top: 8px;
+}
+
+.story-closing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.story-secondary-link,
+.story-link {
+  color: var(--teal-deep);
+  font-weight: 800;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
 @media (max-width: 860px) {
   .site-header {
     position: absolute;
@@ -1032,6 +1316,28 @@ h3 {
 
   .participate-grid article {
     min-height: 280px;
+  }
+
+  .story-opening,
+  .chapter-grid,
+  .story-video-grid,
+  .story-closing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-marker {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .chapter-marker i {
+    flex: 1;
+    margin: 0;
+  }
+
+  .mission-pillars {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1125,5 +1431,25 @@ h3 {
 
   .modal-cancel {
     min-height: 40px;
+  }
+
+  .story-hero {
+    min-height: 620px;
+  }
+
+  .story-hero h1 {
+    font-size: clamp(3.6rem, 20vw, 5.6rem);
+  }
+
+  .story-opening {
+    gap: 30px;
+  }
+
+  .story-quote blockquote {
+    font-size: 1.9rem;
+  }
+
+  .mission-pillars section {
+    padding: 25px;
   }
 }
