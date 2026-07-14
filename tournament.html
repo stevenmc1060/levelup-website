@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan McPherson Memorial Golf Tournament | Level-Up for a Cure</title>
+    <meta name="description" content="Join the Ryan McPherson Memorial Golf Tournament on October 22, 2026 at Cowboys Golf Club in Grapevine, Texas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=6">
+  </head>
+  <body class="tournament-page">
+    <header class="site-header tournament-header">
+      <a class="brand" href="index.html" aria-label="Level-Up for a Cure home">
+        <img class="brand-logo" src="assets/levelup-logo.png" alt="" width="1024" height="1024">
+        <span><strong>Level-Up</strong><small>for a Cure</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="tournament.html" aria-current="page">Annual Golf Tournament</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="#participate">Get Involved</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tournament-hero" aria-labelledby="tournament-title">
+        <img src="assets/tournament-banner.png" alt="Ryan McPherson Memorial Golf Tournament, October 22, 2026 at 8:00 AM at Cowboys Golf Club in Grapevine, Texas" width="1792" height="896">
+        <h1 id="tournament-title" class="visually-hidden">Ryan McPherson Memorial Golf Tournament</h1>
+      </section>
+
+      <section class="tournament-intro">
+        <div class="tournament-shell tournament-intro-grid">
+          <aside class="tournament-date-card" aria-label="Tournament date and location">
+            <span class="date-month">October</span>
+            <strong>22</strong>
+            <span class="date-year">2026</span>
+            <div></div>
+            <p>Cowboys Golf Club<br><small>Grapevine, Texas</small></p>
+          </aside>
+          <div class="tournament-copy">
+            <p class="eyebrow">The inaugural annual tournament</p>
+            <h2>Play with purpose.</h2>
+            <p class="tournament-lead">Join us for a meaningful day of golf, community, and remembrance as we honor Ryan McPherson and raise support for families battling cancer.</p>
+            <div class="event-facts" aria-label="Tournament details">
+              <div><span>Date</span><strong>October 22, 2026</strong></div>
+              <div><span>Start time</span><strong>8:00 AM</strong></div>
+              <div><span>Location</span><strong>Cowboys Golf Club<br><small>Grapevine, Texas</small></strong></div>
+            </div>
+            <div class="tournament-actions">
+              <a class="button tournament-button" href="https://givebutter.com/c/levelup4cure-golf" target="_blank" rel="noopener noreferrer">Request Tickets</a>
+              <a class="text-link" href="#participate">Explore ways to support <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="purpose-band" aria-labelledby="purpose-title">
+        <div class="tournament-shell purpose-grid">
+          <p class="purpose-kicker">More than a game.</p>
+          <div>
+            <p class="eyebrow">Ryan's legacy</p>
+            <h2 id="purpose-title">A legacy that lives on.</h2>
+            <p>Every round played, sponsorship made, and gift given helps provide housing nights for families who must travel for cancer treatment—giving them a place to rest, stay together, and remain close to the care they need.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="participate-section" id="participate" aria-labelledby="participate-title">
+        <div class="tournament-shell">
+          <div class="participate-heading">
+            <p class="eyebrow">Make an impact</p>
+            <h2 id="participate-title">Join us on the course.</h2>
+            <p>Whether you play, sponsor, or donate, you help turn a day on the course into practical support for families facing cancer.</p>
+          </div>
+          <div class="participate-grid">
+            <article>
+              <span class="card-number">01</span>
+              <h3>Play</h3>
+              <p>Reserve your place in the tournament and be part of a memorable day at Cowboys Golf Club.</p>
+              <a href="https://givebutter.com/c/levelup4cure-golf" target="_blank" rel="noopener noreferrer">Request ticket information</a>
+            </article>
+            <article>
+              <span class="card-number">02</span>
+              <h3>Sponsor</h3>
+              <p>Put your business or organization behind a day that brings the community together for a lasting purpose.</p>
+              <a href="https://givebutter.com/levelup-sponsorship" target="_blank" rel="noopener noreferrer">Request sponsorship details</a>
+            </article>
+            <article>
+              <span class="card-number">03</span>
+              <h3>Donate</h3>
+              <p>Support the mission even if you cannot attend. Every contribution helps fund housing nights for families.</p>
+              <a href="https://givebutter.com/level-up-donations" target="_blank" rel="noopener noreferrer">Make a donation</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tournament-cta">
+        <div class="tournament-shell">
+          <p class="eyebrow">October 22, 2026 · 8:00 AM</p>
+          <h2>Meet us at Cowboys Golf Club.</h2>
+          <p>Grapevine, Texas</p>
+          <button class="button tournament-button" type="button" data-open-contact>Contact the Tournament Team</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="contact-modal" id="contact-modal" aria-labelledby="contact-modal-title">
+      <div class="contact-modal-head">
+        <div>
+          <p class="eyebrow">Tournament inquiries</p>
+          <h2 id="contact-modal-title">Contact the tournament team.</h2>
+        </div>
+        <button class="modal-close" type="button" data-close-contact aria-label="Close contact form">&times;</button>
+      </div>
+      <form class="contact-form" id="tournament-contact-form">
+        <label>
+          What can we help with?
+          <select name="topic" required>
+            <option value="" selected disabled>Select a topic</option>
+            <option>Tickets and registration</option>
+            <option>Corporate sponsorships</option>
+            <option>Co-marketing opportunities</option>
+            <option>Auction item donations</option>
+            <option>General donations</option>
+            <option>Volunteering</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <div class="contact-form-row">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+        </div>
+        <div class="contact-form-row">
+          <label>
+            Organization <span>(optional)</span>
+            <input type="text" name="organization" autocomplete="organization">
+          </label>
+          <label>
+            Phone <span>(optional)</span>
+            <input type="tel" name="phone" autocomplete="tel">
+          </label>
+        </div>
+        <label>
+          How can we help?
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <p class="contact-form-note">Submitting will open your email app with this message addressed to our tournament team.</p>
+        <div class="contact-form-actions">
+          <button class="button tournament-button" type="submit">Prepare Email</button>
+          <button class="modal-cancel" type="button" data-close-contact>Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
+    <footer class="site-footer tournament-footer">
+      <div class="section-shell footer-grid">
+        <div class="footer-brand">
+          <img src="assets/levelup-logo.png" alt="Level-Up for a Cure" width="1024" height="1024">
+          <p><strong>Level-Up for a Cure</strong><br>Play with Purpose</p>
+        </div>
+        <p>Founded in memory of Ryan McPherson.</p>
+      </div>
+    </footer>
+    <script src="tournament.js"></script>
+  </body>
+</html>
